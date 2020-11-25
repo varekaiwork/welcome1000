@@ -1,0 +1,19 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url('../fonts/#{$file_name}.woff') format('woff'), url('../fonts/#{$file_name}.woff2') format('woff2');
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+@include font('Promo-Bold', 'Promo-Bold', '400', 'normal');
+@include font('Promo-ExtraLight', 'Promo-ExtraLight', '400', 'normal');
+@include font('Promo-Light', 'Promo-Light', '400', 'normal');
+@include font('Promo-Medium', 'Promo-Medium', '400', 'normal');
+@include font('Promo-Normal', 'Promo-Normal', '400', 'normal');
+@include font('Promo-Regular', 'Promo-Regular', '400', 'normal');
+@include font('Promo-SemiBold', 'Promo-SemiBold', '400', 'normal');
+@include font('Promo-Thin', 'Promo-Thin', '400', 'normal');
+@include font('Promo-UltraLight', 'Promo-UltraLight', '400', 'normal');

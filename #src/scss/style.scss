@@ -1,0 +1,376 @@
+@import 'libs/normalize';
+@import 'fonts.scss';
+
+body {
+  font-family: 'Promo-Normal';
+  line-height: 1.2;
+  color: #fff;
+}
+:root {
+  font-size: 0.8px;
+}
+
+.content {
+  background-color: #171f35;
+  overflow: hidden;
+}
+.bg {
+  display: none;
+}
+.container {
+  max-width: 1630px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.content__inner {
+  min-height: 100vh;
+  display: flex;
+  padding-top: 174rem;
+  flex-direction: column;
+}
+.content__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 85rem;
+}
+.left-side {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.left-side__logo {
+  margin-top: 30rem;
+  margin-bottom: 17rem;
+}
+.left-side__title {
+  text-transform: uppercase;
+  font-family: 'Promo-Bold';
+  font-size: 50rem;
+  line-height: 60rem;
+  margin-bottom: 53rem;
+  span {
+    display: block;
+    font-size: 80rem;
+    line-height: 98rem;
+  }
+}
+.left-side__btns {
+  display: flex;
+  align-items: center;
+}
+.btn.bet {
+  color: white;
+  text-decoration: none;
+  z-index: 100;
+  font-family: 'Promo-Bold';
+  font-size: 40rem;
+  line-height: 58rem;
+  padding: 15rem 76rem;
+  background: #f7941d;
+  border-radius: 25rem;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    right: -60rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 95rem;
+    height: 70rem;
+    background-image: url(../img/chip.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+.terms {
+  margin-left: 87rem;
+  font-size: 30rem;
+  cursor: pointer;
+  z-index: 100;
+}
+.right-side {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 807rem;
+  height: 637rem;
+}
+.roullete-main {
+  z-index: 2;
+  width: 603rem;
+}
+.roullete {
+  position: absolute;
+  &.roullete-pointer {
+    width: 161rem;
+    cursor: pointer;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  &.roullete-gnome {
+    width: 440rem;
+    right: -50rem;
+    bottom: 0;
+    z-index: 2;
+  }
+  &.roullete-crown {
+    width: 240rem;
+    left: -60rem;
+    top: -20rem;
+    z-index: 2;
+  }
+  &.roullete-q {
+    width: 104rem;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+  &.roullete-dice {
+    width: 204rem;
+    left: 30rem;
+    bottom: 60rem;
+    z-index: 2;
+  }
+  &.roullete-shadow {
+    width: 757rem;
+    bottom: 0rem;
+    z-index: 1;
+    right: 0%;
+    transform: translateY(50%);
+  }
+  &.roullete-slot {
+    width: 307rem;
+    right: -50rem;
+    top: -100rem;
+    z-index: 1;
+  }
+  &.roulette-light {
+    top: -177rem;
+    right: -400rem;
+    width: 2200rem;
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating-fast {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1440deg);
+  }
+}
+.rotating {
+  animation: rotating 7s linear infinite;
+  &.fast {
+    animation: rotating-fast 3s ease-in-out;
+  }
+}
+
+.content__steps {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 43rem;
+}
+.step {
+  position: relative;
+  padding: 10rem 45rem;
+  margin: 0 14rem;
+  margin-bottom: 10rem;
+  background: rgba(14, 19, 32, 0.8);
+  border-radius: 25rem;
+  max-width: 500rem;
+  width: 100%;
+  min-height: 151rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 28rem;
+  line-height: 33rem;
+  font-family: 'Promo-Normal';
+  span {
+    color: #f7941d;
+    font-size: 48rem;
+    font-family: 'Promo-Bold';
+    line-height: 57rem;
+  }
+}
+.step.step-1 {
+  &::before {
+    content: '';
+    position: absolute;
+    left: -60rem;
+    bottom: -50rem;
+    width: 139rem;
+    height: 93rem;
+    background-image: url(../img/Coin-1.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.step.step-3 {
+  &::before {
+    content: '';
+    position: absolute;
+    right: -30rem;
+    bottom: -20rem;
+    width: 60rem;
+    height: 63rem;
+    background-image: url(../img/Coin-2.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+.content__footer {
+  text-align: center;
+  padding: 12px 20px;
+  background: #0e1321;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Promo-Light';
+
+  p {
+    font-size: 16rem;
+    margin: 6rem 0;
+  }
+}
+
+//start popup
+
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(14, 20, 28, 0.7);
+  z-index: 200;
+  visibility: hidden;
+  &.visible {
+    visibility: visible;
+  }
+}
+.popup-box {
+  position: relative;
+  max-width: 1110rem;
+  padding: 55rem 45rem;
+  font-weight: 400;
+  font-size: 32rem;
+  text-align: center;
+  background: #0e141c;
+  border: 2px solid #92a7c2;
+  border-radius: 35px;
+  p {
+    margin: 15rem 0;
+  }
+}
+.popup-close {
+  cursor: pointer;
+  position: absolute;
+  right: -30rem;
+  top: -30rem;
+  background: linear-gradient(180deg, #fe7530 0%, #ffa72e 100%);
+  width: 70rem;
+  height: 70rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 48rem;
+  font-weight: 900;
+  border-radius: 50%;
+}
+.bonus-code {
+  span {
+    color: #f7941d;
+  }
+}
+
+//end popup
+
+@media (max-width: 1570px) {
+  .step.step-1::before {
+    left: -30rem;
+  }
+  .left-side {
+    width: 40%;
+  }
+  .left-side__title {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 1420px) {
+  .left-side {
+    z-index: 50;
+  }
+  .step {
+    padding: 10rem 35rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  :root {
+    font-size: 0.75px;
+  }
+}
+@media (max-width: 1170px) {
+  .popup-box {
+    max-width: 80%;
+  }
+  .content__wrapper {
+    flex-wrap: wrap;
+  }
+  .left-side {
+    min-width: 100%;
+  }
+  .right-side {
+    min-width: 50%;
+  }
+  .roullete.roulette-light {
+    display: none;
+  }
+  .content__footer {
+    position: inherit;
+  }
+  .content__inner {
+    padding-top: 10rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .popup-box {
+    max-width: 60%;
+  }
+}
+@media (max-width: 420px) {
+  .popup-box {
+    max-width: 70%;
+  }
+}

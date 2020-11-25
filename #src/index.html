@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://buff.bet/images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,300;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Thanksgiving Day | Buff.bet</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="container">
+        <div class="content__inner">
+          <div class="content__wrapper">
+            <div class="left-side">
+              <div class="left-side__logo">
+                <img src="img/logo.png" alt="logo" />
+              </div>
+              <div class="left-side__title">
+                Double your first deposit
+                <span>UP TO 500 EURO</span>
+              </div>
+              <div class="left-side__btns">
+                <a href="https://buff.bet/en/esports" class="btn bet">BET NOW</a>
+                <div class="terms" id="terms">*terms apply</div>
+              </div>
+            </div>
+            <div class="right-side">
+              <img class="roullete-main rotating" src="img/Roullete.png" alt="roullete" />
+              <img class="roullete roullete-gnome" src="img/Gnome.png" alt="Gnome" />
+              <img class="roullete roullete-crown" src="img/Crown.png" alt="Crown" />
+              <img class="roullete roullete-q" src="img/Q.png" alt="Q" />
+              <img class="roullete roullete-pointer" src="img/Roullete-Pointer.png" alt="Pointer" />
+              <img class="roullete roullete-shadow" src="img/shadow.png" alt="shadow" />
+              <img class="roullete roullete-dice" src="img/Dice.png" alt="Dice" />
+              <img class="roullete roulette-light" src="img/light-bg.png" alt="light" />
+              <img class="roullete roullete-slot" src="img/slot-machine.png" alt="slot" />
+            </div>
+          </div>
+          <div class="content__steps">
+            <div class="step step-1">
+              <span>STEP 1</span>
+              Open an account on Buff.bet
+            </div>
+            <div class="step step-2">
+              <span>STEP 2</span>
+              Deposit 20$ or more
+            </div>
+            <div class="step step-3">
+              <span>STEP 3</span>
+              Use bonus code WELCOME1000
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content__footer">
+        <p>Website is operated by XB Entertainment Group N.V., Abraham de Veerstraat 9, Willemstad. Curacao, who will be processing payments and Paysafe payments for Buff.bet</p>
+        <p>XB Entertainment Group N.V. is licensed and regulated by the Government of Curacao, license #365/ JAZ.</p>
+      </div>
+      <div class="popup">
+        <div class="popup-bg"></div>
+        <div class="popup-box">
+          <div class="popup-close" id="close">X</div>
+
+          <div class="bonus-code">
+            Bonus code
+            <span>WELCOME1000</span>
+          </div>
+          <hr />
+          <p>Min.deposit: 20 EUR</p>
+          <p>Deposit up to: 500 EUR</p>
+          <p>And get up to: 500 EUR</p>
+          <p>Bonus percentage: 100%</p>
+          <p>Valid: 30 days</p>
+          <p>Max. withdrawal: deposit + 2x bonus</p>
+          <hr />
+          <div class="bottom-text">
+            <p>Rollover for casino: x40 bonus + deposit</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function getParameterByName() {
+        return window.location.href.replace(/.*btag=/gi, '')
+      }
+      function setCookie(e, t, o) {
+        var n = ''
+        if (o) {
+          var i = new Date()
+          i.setTime(i.getTime() + 24 * o * 60 * 60 * 1e3), (n = '; expires=' + i.toUTCString())
+        }
+        document.cookie = e + '=' + (t || '') + n + '; domain=.buff.bet;path=/'
+      }
+      function getCookie(e) {
+        for (var t = e + '=', o = document.cookie.split(';'), n = 0; n < o.length; n++) {
+          for (var i = o[n]; ' ' == i.charAt(0); ) i = i.substring(1, i.length)
+          if (0 == i.indexOf(t)) return i.substring(t.length, i.length)
+        }
+        return null
+      }
+      function eraseCookie(e) {
+        document.cookie = e + '=; Max-Age=-99999999;'
+      }
+      setCookie('btag', getParameterByName(), 7)
+    </script>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
