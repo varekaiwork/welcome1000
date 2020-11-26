@@ -295,8 +295,10 @@ body {
 }
 
 .content {
+  position: relative;
   background-color: #171f35;
   overflow: hidden;
+  min-height: 100vh;
 }
 
 .bg {
@@ -310,7 +312,6 @@ body {
 }
 
 .content__inner {
-  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,6 +376,7 @@ body {
 }
 
 .btn.bet {
+  text-align: center;
   color: white;
   text-decoration: none;
   z-index: 100;
@@ -449,7 +451,7 @@ body {
   width: 440rem;
   right: -50rem;
   bottom: 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 .roullete.roullete-crown {
@@ -755,6 +757,50 @@ body {
 }
 
 @media (max-width: 1170px) {
+  .content {
+    background-color: #16254efa;
+  }
+
+  .bg {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 101;
+  }
+
+  .left-side {
+    margin-top: 102rem;
+    padding-left: 40rem;
+  }
+
+  .content__steps {
+    margin-top: 200rem;
+  }
+
+  .step {
+    background: #0e1320;
+  }
+
+  .content__footer {
+    position: absolute;
+  }
+
+  .left-side,
+  .content__steps,
+  .content__footer {
+    z-index: 102;
+  }
+
+  .right-side {
+    position: absolute;
+    min-width: 50%;
+    top: 100rem;
+  }
+
   .popup-box {
     max-width: 80%;
   }
@@ -768,16 +814,8 @@ body {
     min-width: 100%;
   }
 
-  .right-side {
-    min-width: 50%;
-  }
-
   .roullete.roulette-light {
     display: none;
-  }
-
-  .content__footer {
-    position: inherit;
   }
 
   .content__inner {
@@ -785,9 +823,111 @@ body {
   }
 }
 
+@media (max-width: 1060px) {
+  .bg {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .content__steps {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .step {
+    background-color: #2e3b5f;
+    min-width: 40%;
+  }
+
+  .content__footer {
+    position: relative;
+    background-color: #2e3b5f;
+  }
+
+  .content__steps {
+    margin-top: 43rem;
+  }
+
+  .step.step-1::before {
+    z-index: 100;
+    width: 100rem;
+    background-size: contain;
+  }
+
+  .left-side {
+    padding-left: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 @media (max-width: 670px) {
   .popup-box {
     max-width: 60%;
+  }
+
+  .left-side {
+    margin-top: 20rem;
+  }
+
+  .left-side__title {
+    text-align: center;
+    font-size: 35rem;
+    line-height: 50rem;
+  }
+
+  .left-side__title span {
+    font-size: 70rem;
+    line-height: 80rem;
+  }
+}
+
+@media (max-width: 590px) {
+  :root {
+    font-size: 0.7px;
+  }
+}
+
+@media (max-width: 480px) {
+  .step {
+    max-width: 450rem;
+  }
+
+  .left-side__logo {
+    text-align: center;
+  }
+
+  .left-side__logo img {
+    width: 80%;
+  }
+
+  .left-side__btns {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .btn.bet {
+    min-width: 50%;
+    margin-bottom: 20rem;
+  }
+
+  .terms {
+    margin-left: 0;
+  }
+
+  .content__wrapper {
+    margin-bottom: 20rem;
+  }
+
+  :root {
+    font-size: 0.6px;
+  }
+
+  .content__footer {
+    position: absolute;
   }
 }
 
