@@ -299,6 +299,13 @@ body {
   background-color: #171f35;
   overflow: hidden;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .bg {
@@ -632,7 +639,7 @@ body {
   text-align: center;
   padding: 12px 20px;
   background: #0e1321;
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
   right: 0;
@@ -650,6 +657,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-family: 'Promo-Light';
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .content__footer p {
@@ -773,12 +783,12 @@ body {
   }
 
   .left-side {
-    margin-top: 102rem;
+    margin-top: 126rem;
     padding-left: 40rem;
   }
 
   .content__steps {
-    margin-top: 200rem;
+    margin-top: 100rem;
   }
 
   .step {
@@ -786,7 +796,7 @@ body {
   }
 
   .content__footer {
-    position: absolute;
+    position: inherit;
   }
 
   .left-side,

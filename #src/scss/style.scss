@@ -15,6 +15,8 @@ body {
   background-color: #171f35;
   overflow: hidden;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .bg {
   display: none;
@@ -244,7 +246,7 @@ body {
   text-align: center;
   padding: 12px 20px;
   background: #0e1321;
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
   right: 0;
@@ -253,6 +255,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Promo-Light';
+  flex-grow: 1;
 
   p {
     font-size: 16rem;
@@ -357,17 +360,17 @@ body {
     z-index: 101;
   }
   .left-side {
-    margin-top: 102rem;
+    margin-top: 126rem;
     padding-left: 40rem;
   }
   .content__steps {
-    margin-top: 200rem;
+    margin-top: 100rem;
   }
   .step {
     background: rgba(14, 19, 32, 1);
   }
   .content__footer {
-    position: absolute;
+    position: inherit;
   }
   .left-side,
   .content__steps,
