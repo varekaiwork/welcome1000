@@ -221,14 +221,6 @@ template {
 }
 
 @font-face {
-  font-family: "Promo-ExtraLight";
-  font-display: swap;
-  src: url("../fonts/Promo-ExtraLight.woff") format("woff"), url("../fonts/Promo-ExtraLight.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Promo-Light";
   font-display: swap;
   src: url("../fonts/Promo-Light.woff") format("woff"), url("../fonts/Promo-Light.woff2") format("woff2");
@@ -237,49 +229,9 @@ template {
 }
 
 @font-face {
-  font-family: "Promo-Medium";
-  font-display: swap;
-  src: url("../fonts/Promo-Medium.woff") format("woff"), url("../fonts/Promo-Medium.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Promo-Normal";
   font-display: swap;
   src: url("../fonts/Promo-Normal.woff") format("woff"), url("../fonts/Promo-Normal.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Promo-Regular";
-  font-display: swap;
-  src: url("../fonts/Promo-Regular.woff") format("woff"), url("../fonts/Promo-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Promo-SemiBold";
-  font-display: swap;
-  src: url("../fonts/Promo-SemiBold.woff") format("woff"), url("../fonts/Promo-SemiBold.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Promo-Thin";
-  font-display: swap;
-  src: url("../fonts/Promo-Thin.woff") format("woff"), url("../fonts/Promo-Thin.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Promo-UltraLight";
-  font-display: swap;
-  src: url("../fonts/Promo-UltraLight.woff") format("woff"), url("../fonts/Promo-UltraLight.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
